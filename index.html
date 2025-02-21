@@ -1,1 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skodra - Agence d'Architecture</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            position: relative;
+            text-align: center;
+            padding: 100px 20px;
+            background: url('background.jpg') center/cover no-repeat;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero button {
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: space-around;
+            background-color: #222;
+            flex-wrap: wrap;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .cards__item {
+            text-align: center;
+            max-width: 200px;
+            display: flex;
+            padding: 1rem;
+        }
+
+        @media (min-width: 40rem) {
+            .cards__item {
+                width: 50%;
+            }
+        }
+
+        @media (min-width: 56rem) {
+            .cards__item {
+                width: 33.3333%;
+            }
+        }
+
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 50px;
+        }
+        
+        .portfolio-item img {
+            text-align: center;
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">SKODRA.FR</div>
+        <nav>
+            <ul>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#news">Actualités</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Concevoir les structures qui résonnent avec l’avenir.</h1>
+            <button>Obtenez un devis</button>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="cards__item1">
+            <h3>Innovation</h3>
+            <p>Designs uniques et contemporains.</p>
+        </div>
+        <div class="cards__item2">
+            <h3>Durabilité</h3>
+            <p>Approches écologiques et responsables.</p>
+        </div>
+        <div class="cards__item3">
+            <h3>Expertise</h3>
+            <p>Équipe talentueuse et expérimentée.</p>
+        </div>
+        <div class="cards__item4">
+            <h3>Personnalisation</h3>
+            <p>Projets adaptés à vos besoins.</p>
+        </div>
+        <div class="cards__item5">
+            <h3>Fiabilité</h3>
+            <p>Respect des délais et budgets.</p>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <div class="portfolio-item">
+            <img src="travaux.jpg" alt="Travaux">
+            <h4>Travaux</h4>
+        </div>
+        <div class="portfolio-item">
+            <img src="structures.jpg" alt="Structures">
+            <h4>Structures</h4>
+        </div>
+        <div class="portfolio-item">
+            <img src="materiaux.jpg" alt="Matériaux">
+            <h4>Matériaux</h4>
+        </div>
+        <div class="portfolio-item">
+            <img src="habitations.jpg" alt="Habitations">
+            <h4>Habitations</h4>
+        </div>
+        <div class="portfolio-item">
+            <img src="renovations.jpg" alt="Rénovations">
+            <h4>Rénovations</h4>
+        </div>
+        <div class="portfolio-item">
+            <img src="experience.jpg" alt="Expérience">
+            <h4>Expérience</h4>
+        </div>
+    </section>
+</body>
+
+</html>
